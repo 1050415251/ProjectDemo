@@ -102,6 +102,11 @@
 		FDABDBDF21816D2200E1AC04 /* NormalWebDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABDBDA21816D2200E1AC04 /* NormalWebDelegate.swift */; };
 		FDABDBE021816D2200E1AC04 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABDBDB21816D2200E1AC04 /* WebController.swift */; };
 		FDABDBE421816F0100E1AC04 /* WebDelegatePro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABDBE321816F0000E1AC04 /* WebDelegatePro.swift */; };
+		FDABDBE62181982800E1AC04 /* AppdelegateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABDBE52181982800E1AC04 /* AppdelegateCommand.swift */; };
+		FDABDBE82181986300E1AC04 /* PushAppdelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABDBE72181986300E1AC04 /* PushAppdelegate.swift */; };
+		FDABDBEA218198B100E1AC04 /* VendorAppdelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABDBE9218198B100E1AC04 /* VendorAppdelegate.swift */; };
+		FDABDBEC218198DF00E1AC04 /* WindowAppdelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABDBEB218198DF00E1AC04 /* WindowAppdelegate.swift */; };
+		FDABDBF021819B0C00E1AC04 /* AppdelegateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABDBEF21819B0C00E1AC04 /* AppdelegateType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -246,6 +251,11 @@
 		FDABDBDA21816D2200E1AC04 /* NormalWebDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalWebDelegate.swift; sourceTree = "<group>"; };
 		FDABDBDB21816D2200E1AC04 /* WebController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
 		FDABDBE321816F0000E1AC04 /* WebDelegatePro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebDelegatePro.swift; sourceTree = "<group>"; };
+		FDABDBE52181982800E1AC04 /* AppdelegateCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppdelegateCommand.swift; sourceTree = "<group>"; };
+		FDABDBE72181986300E1AC04 /* PushAppdelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAppdelegate.swift; sourceTree = "<group>"; };
+		FDABDBE9218198B100E1AC04 /* VendorAppdelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorAppdelegate.swift; sourceTree = "<group>"; };
+		FDABDBEB218198DF00E1AC04 /* WindowAppdelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowAppdelegate.swift; sourceTree = "<group>"; };
+		FDABDBEF21819B0C00E1AC04 /* AppdelegateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppdelegateType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -498,6 +508,8 @@
 			isa = PBXGroup;
 			children = (
 				FDABDAC02181549800E1AC04 /* AppDelegate.swift */,
+				FDABDBEE21819AEF00E1AC04 /* combination */,
+				FDABDBED21819AE100E1AC04 /* command */,
 			);
 			path = Appdelegate;
 			sourceTree = "<group>";
@@ -628,6 +640,25 @@
 				FDABDBDA21816D2200E1AC04 /* NormalWebDelegate.swift */,
 			);
 			path = Web;
+			sourceTree = "<group>";
+		};
+		FDABDBED21819AE100E1AC04 /* command */ = {
+			isa = PBXGroup;
+			children = (
+				FDABDBE52181982800E1AC04 /* AppdelegateCommand.swift */,
+				FDABDBEB218198DF00E1AC04 /* WindowAppdelegate.swift */,
+				FDABDBE72181986300E1AC04 /* PushAppdelegate.swift */,
+				FDABDBE9218198B100E1AC04 /* VendorAppdelegate.swift */,
+			);
+			path = command;
+			sourceTree = "<group>";
+		};
+		FDABDBEE21819AEF00E1AC04 /* combination */ = {
+			isa = PBXGroup;
+			children = (
+				FDABDBEF21819B0C00E1AC04 /* AppdelegateType.swift */,
+			);
+			path = combination;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -832,6 +863,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
@@ -848,6 +880,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
@@ -877,6 +910,8 @@
 				FDABDB4B218154E500E1AC04 /* TabBarController.swift in Sources */,
 				FDABDB32218154E500E1AC04 /* ContactsUtils.swift in Sources */,
 				FDABDB7D21815E2500E1AC04 /* Reachability.m in Sources */,
+				FDABDBEA218198B100E1AC04 /* VendorAppdelegate.swift in Sources */,
+				FDABDBE82181986300E1AC04 /* PushAppdelegate.swift in Sources */,
 				FDABDB29218154E500E1AC04 /* ex+Date.swift in Sources */,
 				FDABDBB0218162B000E1AC04 /* UIView+Layout.m in Sources */,
 				FDABDB21218154E500E1AC04 /* ex+UIImage.swift in Sources */,
@@ -893,6 +928,7 @@
 				FDABDB3E218154E500E1AC04 /* GTDatePickerView.swift in Sources */,
 				FDABDB2E218154E500E1AC04 /* HandlerStringUtils.m in Sources */,
 				FDABDB52218154E500E1AC04 /* BaselistController.swift in Sources */,
+				FDABDBEC218198DF00E1AC04 /* WindowAppdelegate.swift in Sources */,
 				FDABDBAB218162AF00E1AC04 /* TZImageCropManager.m in Sources */,
 				FDABDBAC218162AF00E1AC04 /* TZAssetCell.m in Sources */,
 				FDABDB44218154E500E1AC04 /* TextBottomImgTopBtn.swift in Sources */,
@@ -927,6 +963,7 @@
 				FDABDB28218154E500E1AC04 /* ex+String.swift in Sources */,
 				FDABDB3D218154E500E1AC04 /* KeyBoardView.swift in Sources */,
 				FDABDB49218154E500E1AC04 /* TabBarView.swift in Sources */,
+				FDABDBE62181982800E1AC04 /* AppdelegateCommand.swift in Sources */,
 				FDABDBAE218162B000E1AC04 /* TZAssetModel.m in Sources */,
 				FDABDBD22181648F00E1AC04 /* UIImage+Filter.swift in Sources */,
 				FDABDB43218154E500E1AC04 /* NoDataView.swift in Sources */,
@@ -937,6 +974,7 @@
 				FDABDBCD2181648F00E1AC04 /* PhotoCutterViewController.swift in Sources */,
 				FDABDBB7218162B000E1AC04 /* TZImagePickerController.m in Sources */,
 				FDABDB39218154E500E1AC04 /* SelectViewController.swift in Sources */,
+				FDABDBF021819B0C00E1AC04 /* AppdelegateType.swift in Sources */,
 				FDABDAC12181549800E1AC04 /* AppDelegate.swift in Sources */,
 				FDABDB46218154E500E1AC04 /* BottomManySelectView.swift in Sources */,
 				FDABDBB3218162B000E1AC04 /* TZProgressView.m in Sources */,
@@ -1130,10 +1168,7 @@
 				DEVELOPMENT_TEAM = EYL5FF5EVL;
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinliang.project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Demo/DemoBridge.h";
@@ -1151,10 +1186,7 @@
 				DEVELOPMENT_TEAM = EYL5FF5EVL;
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinliang.project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Demo/DemoBridge.h";
@@ -1171,11 +1203,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EYL5FF5EVL;
 				INFOPLIST_FILE = DemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinliang.project.DemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1192,11 +1220,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EYL5FF5EVL;
 				INFOPLIST_FILE = DemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinliang.project.DemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1212,11 +1236,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EYL5FF5EVL;
 				INFOPLIST_FILE = DemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinliang.project.DemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1232,11 +1252,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EYL5FF5EVL;
 				INFOPLIST_FILE = DemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinliang.project.DemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

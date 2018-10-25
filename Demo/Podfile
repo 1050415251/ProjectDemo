@@ -27,6 +27,8 @@ target 'Demo' do use_frameworks!
     #hud加载
     pod 'MBProgressHUD'
 
+    pod 'SQLite.swift', '~> 0.11.5'
+
 
     # Pods for Demo
 

@@ -13,6 +13,9 @@ PODS:
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
   - SnapKit (4.2.0)
+  - SQLite.swift (0.11.5):
+    - SQLite.swift/standard (= 0.11.5)
+  - SQLite.swift/standard (0.11.5)
   - SwiftyJSON (4.2.0)
   - YYModel (1.0.4)
   - YYText (1.0.7)
@@ -29,6 +32,7 @@ DEPENDENCIES:
   - RxSwift
   - SDWebImage
   - SnapKit
+  - SQLite.swift (~> 0.11.5)
   - SwiftyJSON
   - YYModel
   - YYText
@@ -46,6 +50,7 @@ SPEC REPOS:
     - RxSwift
     - SDWebImage
     - SnapKit
+    - SQLite.swift
     - SwiftyJSON
     - YYModel
     - YYText
@@ -62,10 +67,11 @@ SPEC CHECKSUMS:
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 98deacca9b55684e86d16871f7cd941815715f41
+PODFILE CHECKSUM: ad15a339664ffefba69c9df98dc1882b5e7f1eec
 
 COCOAPODS: 1.5.3
