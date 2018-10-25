@@ -1,0 +1,43 @@
+
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+target 'Demo' do use_frameworks!
+    inhibit_all_warnings!
+
+    pod 'Alamofire'
+    pod 'SDWebImage'
+    pod 'Kingfisher'
+    pod 'CryptoSwift'
+    pod 'MJRefresh'
+    pod 'YYText'
+    pod 'YYModel'
+    pod 'SnapKit'
+    pod 'SwiftyJSON'
+
+    #RxSwift
+    pod 'RxSwift'
+    pod 'RxCocoa'
+
+    #bugly日志集成
+    pod 'Bugly'
+    #pod 'BuglyHotfix'
+
+    #键盘处理事件
+    pod 'IQKeyboardManagerSwift'
+    #hud加载
+    pod 'MBProgressHUD'
+
+
+    # Pods for Demo
+
+    target 'DemoTests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+
+    target 'DemoUITests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+
+end
